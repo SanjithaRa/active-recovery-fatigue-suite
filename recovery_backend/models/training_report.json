@@ -1,0 +1,164 @@
+{
+  "champion_model": "LogisticRegression (Baseline)",
+  "features": [
+    "hr_mean",
+    "rr_mean",
+    "sdnn",
+    "rmssd",
+    "pnn50",
+    "pnn20",
+    "cv_rr",
+    "sd1",
+    "sd2",
+    "sd1_sd2_ratio",
+    "stress_index",
+    "lf_power_est",
+    "hf_power_est",
+    "lf_hf_ratio",
+    "total_power_est",
+    "perfusion_index",
+    "pulse_rise_time_ms",
+    "signal_quality"
+  ],
+  "class_mapping": {
+    "0": "GREEN",
+    "1": "YELLOW",
+    "2": "RED"
+  },
+  "cv_results": {
+    "LogisticRegression (Baseline)": {
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0
+    },
+    "RandomForest": {
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0
+    },
+    "HistGradientBoosting": {
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0
+    },
+    "MLP Neural Net": {
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0
+    }
+  },
+  "validation_comparison": {
+    "LogisticRegression (Baseline)": {
+      "val_accuracy": 1.0,
+      "val_macro_f1": 1.0,
+      "val_weighted_f1": 1.0,
+      "val_roc_auc": 1.0,
+      "macro_f1_95_ci": [
+        1.0,
+        1.0
+      ]
+    },
+    "RandomForest": {
+      "val_accuracy": 1.0,
+      "val_macro_f1": 1.0,
+      "val_weighted_f1": 1.0,
+      "val_roc_auc": 1.0,
+      "macro_f1_95_ci": [
+        1.0,
+        1.0
+      ]
+    },
+    "HistGradientBoosting": {
+      "val_accuracy": 1.0,
+      "val_macro_f1": 1.0,
+      "val_weighted_f1": 1.0,
+      "val_roc_auc": 1.0,
+      "macro_f1_95_ci": [
+        1.0,
+        1.0
+      ]
+    },
+    "MLP Neural Net": {
+      "val_accuracy": 1.0,
+      "val_macro_f1": 1.0,
+      "val_weighted_f1": 1.0,
+      "val_roc_auc": 1.0,
+      "macro_f1_95_ci": [
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "test_metrics": {
+    "test_accuracy": 1.0,
+    "test_macro_f1": 1.0,
+    "test_roc_auc": 1.0,
+    "confusion_matrix": [
+      [
+        90,
+        0,
+        0
+      ],
+      [
+        0,
+        90,
+        0
+      ],
+      [
+        0,
+        0,
+        90
+      ]
+    ],
+    "classification_report": {
+      "GREEN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 90.0
+      },
+      "YELLOW": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 90.0
+      },
+      "RED": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 90.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 270.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 270.0
+      }
+    }
+  },
+  "feature_importances": {
+    "pnn20": 0.952,
+    "stress_index": 0.9436,
+    "lf_hf_ratio": 0.8392,
+    "hf_power_est": 0.7767,
+    "pnn50": 0.7704,
+    "lf_power_est": 0.7415,
+    "hr_mean": 0.6057,
+    "cv_rr": 0.5927,
+    "rr_mean": 0.5842,
+    "rmssd": 0.5668,
+    "sd1": 0.5668,
+    "sdnn": 0.5641,
+    "sd2": 0.5612,
+    "perfusion_index": 0.4277,
+    "pulse_rise_time_ms": 0.4233,
+    "total_power_est": 0.2699,
+    "signal_quality": 0.2624,
+    "sd1_sd2_ratio": 0.1486
+  },
+  "dataset_size": 1800
+}
