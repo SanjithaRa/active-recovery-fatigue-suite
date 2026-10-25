@@ -1,0 +1,19 @@
+# Root requirements.txt for Applied Machine Learning & DSP Suite
+# Nervous System Fatigue Extraction & Readiness Classification
+
+numpy>=1.26.0
+scipy>=1.12.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+xgboost>=2.0.0
+onnx>=1.16.0
+onnxruntime>=1.18.0
+skl2onnx>=1.16.0
+onnxmltools>=1.16.0
+joblib>=1.3.0
+
+# Backend & Test Dependencies
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+pytest>=8.0.0

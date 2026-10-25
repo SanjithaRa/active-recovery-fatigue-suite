@@ -1,0 +1,124 @@
+{
+  "timestamp": "2026-10-25 15:16:25",
+  "dataset": "WESAD (Wearable Stress and Affect Detection)",
+  "modality": "bvp",
+  "window_duration_seconds": 45.0,
+  "stride_seconds": 15.0,
+  "total_windows": 2912,
+  "subjects_count": 15,
+  "subjects_list": [
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9",
+    "S10",
+    "S11",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17"
+  ],
+  "class_distribution": {
+    "0": 1909,
+    "1": 353,
+    "2": 650
+  },
+  "champion_model": "RandomForest",
+  "tournament_evaluation": [
+    {
+      "model_name": "RandomForest (Baseline)",
+      "accuracy_mean": 0.6661569170555514,
+      "accuracy_std": 0.039314967028050256,
+      "macro_f1_mean": 0.549278840854033,
+      "macro_f1_std": 0.043993095101028216,
+      "weighted_f1_mean": 0.6749725220019214,
+      "precision_mean": 0.5440059072506871,
+      "recall_mean": 0.576045023208688,
+      "roc_auc_mean": 0.7805011816303827,
+      "confusion_matrix": [
+        [
+          1310,
+          350,
+          249
+        ],
+        [
+          255,
+          57,
+          41
+        ],
+        [
+          41,
+          36,
+          573
+        ]
+      ],
+      "fold_macro_f1s": [
+        0.4657,
+        0.5714,
+        0.5477,
+        0.5703,
+        0.5913
+      ]
+    },
+    {
+      "model_name": "XGBoost (Champion Candidate)",
+      "accuracy_mean": 0.7430781193724038,
+      "accuracy_std": 0.04434249676106415,
+      "macro_f1_mean": 0.5427366135699526,
+      "macro_f1_std": 0.0361934141706973,
+      "weighted_f1_mean": 0.7133169178190366,
+      "precision_mean": 0.5444785151557157,
+      "recall_mean": 0.5658004297751272,
+      "roc_auc_mean": 0.7832090968306066,
+      "confusion_matrix": [
+        [
+          1620,
+          109,
+          180
+        ],
+        [
+          313,
+          10,
+          30
+        ],
+        [
+          105,
+          11,
+          534
+        ]
+      ],
+      "fold_macro_f1s": [
+        0.481,
+        0.5456,
+        0.5529,
+        0.5403,
+        0.5939
+      ]
+    }
+  ],
+  "feature_importance": {
+    "rr_mean": 0.2024,
+    "hr_mean": 0.1667,
+    "hr_std": 0.0928,
+    "pulse_rise_time_ms": 0.0783,
+    "cv_rr": 0.0505,
+    "pnn50": 0.0427,
+    "pnn20": 0.0425,
+    "sd1_sd2_ratio": 0.0418,
+    "stress_index": 0.0411,
+    "total_power": 0.0336,
+    "sd2": 0.0336,
+    "sdnn": 0.0329,
+    "hf_power": 0.0264,
+    "lf_power": 0.025,
+    "rmssd": 0.0241,
+    "lf_hf_ratio": 0.0232,
+    "sd1": 0.0231,
+    "perfusion_index": 0.0195
+  }
+}
